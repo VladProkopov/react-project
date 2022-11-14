@@ -1,0 +1,1615 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+.header__wrapper__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    
+}
+
+.header__search {
+    display: flex;
+}
+
+.header__search button {
+   border: 0;
+   background: none;
+   cursor: pointer;
+   position: absolute;
+   top: 27px;
+   left: 24px;
+}
+
+.header__search input {
+    border: 1px solid #0000001a;
+    height: 20px;
+    text-align: center;
+    position: relative;
+
+    border-radius: 5px;
+
+    color: #4f4e57;
+    
+    text-transform: capitalize;
+}
+
+.header__search input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.header__logo,
+.header__utility,
+.header__search {
+    margin-bottom: 20px;
+}
+
+.header__logo a {
+    text-decoration: none;
+    font-family: 'Clash Display', sans-serif;
+
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+
+    color: #22202E;
+
+    margin-right: 150px;
+}
+
+.header__utility {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.header__utility button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.navbar {
+    list-style: none;
+
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px; 
+
+    color: #726E8D;
+}
+
+.navbar a:hover {
+    color: #403d4e;
+}
+
+.heroblock__img  {
+    margin-top: 20px;
+
+    height: 850px;
+    background-image: url(/public/images2/heroblocks.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+.heroblock__container {
+    position: absolute;
+    top: 365px;
+    left: 750px;
+    
+    width: 600px;
+    height: 400px;
+    
+    background: white;
+}
+
+.heroblock__container__content {
+    padding: 45px 50px;
+}
+
+.heroblock__container__content h2 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 140%;
+    color: #22202E;
+
+    margin-bottom: 20px;
+}
+
+.heroblock__container__content p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #5B5676;
+}
+
+.heroblock__btn button{
+    background: #F9F9F9;
+    border: 0;
+
+    cursor: pointer;
+
+    margin: 45px;
+    margin-top: 90px;
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2A254B;
+
+    display: block;
+    text-align: center;
+    width: 110px;
+    height: 55px;
+}
+
+
+.heroblock__container button:hover {
+    background: #EBE8F4;
+    color: #403d4e;
+}
+
+.features__top__title {
+    margin-top: 70px;
+    text-align: center;
+
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+
+    color: #2A254B;
+}
+
+.features__list {
+    display: flex;
+    justify-content: center;
+}
+
+.features__list__colomn {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+
+    margin: 35px 80px 80px 80px;
+
+}
+
+.list__colmn {
+    width: 305px;
+    height: 240px;
+
+    background: #F9F9F9;
+}
+
+.colmn__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 45px;
+}
+
+.colomn__icon1 {
+    background-image: url(/public/images2/delivery.png);
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.colomn__icon2 {
+    background-image: url(/public/images2/checkmark.png);
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.colomn__icon3 {
+    background-image: url(/public/images2/purchase.png);
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.colomn__icon4 {
+    background-image: url(/public/images2/sprout.png);
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.colmn__item h3 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+
+    color: #2A254B;
+}
+
+.colmn__item p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #2A254B;
+}
+
+.page__home__listings {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 45px;
+}
+
+
+.list__colmn__item:hover { 
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.list__colmn__item {
+    padding: 17px;
+}
+
+.list__colmn__item img {
+    width: 300px;
+    height: 300px;
+}
+
+.listings__item{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+
+    color: #2A254B;
+
+    margin-top: 20px;
+}
+
+.listings__item__price{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: #2A254B;
+}
+
+.listings__btn {
+    margin-left: auto;
+    margin-right: auto;
+
+    background: #F9F9F9;
+    border: 0;
+    
+    cursor: pointer;
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #2A254B;
+
+    display: block;
+    text-align: center;
+    width: 170px;
+    height: 56px;
+}
+
+.listings__btn:hover {
+    background: #EBE8F4;
+    color: #403d4e;
+}
+
+.page__home__features__bottom {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    margin: 60px;
+}
+
+.features__bottom__container {
+    background: #2A254B;
+    color: white;
+
+    width: 630px;
+    height: 470px;
+
+}
+
+.features__botoom__content {
+    padding: 60px;
+}
+
+.features__botoom__content h3 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    margin-bottom: 12px;
+}
+
+.features__botoom__content p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 24px;
+    width: 500px;
+}
+
+.features__botoom__content button {
+    margin-top: 200px;
+    width: 170px;
+    height: 55px;
+
+    background: #f9f9f926;
+    border: 0;
+
+    cursor: pointer;
+
+    color: white;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.features__botoom__content button:hover {
+    background-color: #f9f9f949 ;
+}
+
+.features__bottom_img {
+    background-image: url(/public/images2/imageBlock.png);
+    background-size: cover;
+    height: 470px;
+    width: 630px;
+}
+
+.page__home__email__signup {
+    background-image: url(/public/images2/emailSingup.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 101%;
+    position: relative;
+
+    height: 444px;
+}
+
+.email__singup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.email__singup h3 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 140%;
+
+    color: #FFFFFF;
+
+    margin-bottom: 12px;
+}
+
+.email__singup p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+
+    width: 470px;
+    height: 54px;
+
+    margin-bottom: 30px;
+}
+
+.email__singup__list {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.email__singup__list__item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.email__singup__list__item span {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+}
+
+.signup__form{
+    margin-top: 40px;
+    display: flex;
+}
+
+.signup__form input {
+    box-sizing: border-box;
+
+    width: 354px;
+    height: 56px;
+
+    border: 0;
+
+    padding: 30px;
+
+    font-size: 20px;
+    color: #2A254B;
+}
+
+.signup__form input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.signup__form input::placeholder {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #2A254B;
+    opacity: 0.2;
+}
+
+.signup__form button {
+    padding: 16px 32px;
+
+    width: 118px;
+    height: 60px;
+
+    background: #2A254B;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: white;
+}
+
+.footer__page {
+    background: #2A254B;
+}
+
+.footer__container,
+.footer__container__social__network {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 110px 50px 110px;
+}
+
+.footer__container__column {
+    display: flex;
+    gap: 100px;
+}
+
+.column1 h4,
+.column2 h4,
+.column3 h4 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: white;
+}
+
+.column1__list,
+.column2__list,
+.column3__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+
+    list-style: none;
+
+    margin-top: 12px;
+}
+
+
+.column1__list li a,
+.column2__list li a,
+.column3__list li a {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.footer__container__signup__form h4{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: white;
+}
+
+.footer__signup__form {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__signup__form input {
+    box-sizing: border-box;
+    width: 509px;
+    height: 56px;
+    
+    background: rgba(255, 255, 255, 0.15);
+    border: 0;
+    padding: 30px;
+
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.footer__signup__form input::placeholder {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: white;
+}
+
+.footer__signup__form button {
+    padding: 16px 32px;
+    width: 118px;
+    height: 60px;
+
+    background: white;
+    border: 0;
+
+    cursor: pointer;
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #2A254B;
+}
+
+.footer__signup__form input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.footer__container__social__network {
+    align-items: center;
+    
+    border-top: 1px solid #4E4D93;
+
+    padding: 30px 0;
+    margin: 0px 110px;
+}
+
+.footer__container__social__network span {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: white;
+}
+
+.list__social {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.page__header {
+    background-image: url(/public/images2/pageheaders.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 210px;
+
+    position: relative;
+
+    margin-top: 20px;
+}
+
+.page__header h2 {
+    position: absolute;
+
+    top: 123px;
+    left: 80px;
+
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 140%;
+
+    color: white;
+}
+
+.all__products {
+    display: flex;
+}
+
+.all__products__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 130px;
+    margin-right: 78px;
+    margin-top: 35px;
+
+}
+
+.all__products__container {
+    margin: 60px 190px 0 80px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container__colmn {
+    width: 100px;
+    line-height: 30px;
+}
+
+.container__colmn h3 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #2A254B;
+
+    margin-bottom: 20px;
+}
+
+.container__colmn label {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 190%;
+
+    color: #2A254B;
+
+    display: flex;
+    gap: 12px;
+}
+
+.products__catalog__list {
+    margin-top: 30px;
+}
+
+.products__catalog__list:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.products__catalog__list img {
+    width: 300px;
+    height: 300px;
+}
+
+.catalog__list__item {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+
+    color: #2A254B;
+
+    margin-top: 24px;
+}
+
+.catalog__list__item__price {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: #2A254B;
+
+    margin-top: 8px;
+}
+
+.products__catalog__loadmore {
+    display: flex;
+    justify-content: center;
+    margin: 45px 0 50px 420px;
+}
+
+.btn__loadmore {
+    width: 140px;
+    height: 56px;
+
+    border: 0;
+    background: #F9F9F9;
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #2A254B;
+
+    cursor: pointer;
+}
+
+.btn__loadmore:hover {
+    background-color: #cecece49 ;
+}
+
+.about__header h2{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 140%;
+
+    color: #2A254B;
+
+    text-align: center;
+
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+
+.about__features1,
+.about__features2 {
+    display: flex;
+
+    justify-content: center;
+}
+
+.container__list__content { 
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    margin: 70px 100px 0 80px;
+}
+
+.container__list__content h3,
+.container__list__content2 h3 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 140%;
+
+    color: #2A254B;
+
+    width: 540px;
+}
+
+.container__list__content p,
+.container__list__content2 p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #505977;
+
+    width: 536px;
+}
+
+.container__content__btn {
+    margin-top: 190px;
+
+    width: 150px;
+    height: 56px;
+
+    border: 0;
+    background: #F9F9F9;
+
+    cursor: pointer;
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #2A254B;
+}
+
+.container__content__btn:hover { 
+    background: #dbdbdb;
+}
+
+
+.features1__img { 
+    background-image: url(../images/imageAbout1.png);
+    width: 720px;
+    height: 603px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.features2__img {
+    background-image: url(../images/imageAbout2.png);
+    width: 720px;
+    height: 603px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container__list__content2 {
+    margin: 70px 100px 0 80px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.vacancies__pages {
+    height: 600px;
+
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.vacancies__pages h2 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 140%;
+
+    color: #2A254B;
+}
+
+.vacancie__img {
+    background-image: url(../images/vacancieImg.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.contacts__img {
+    background-image: url(../images/contactus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 525px;
+
+    position: relative;
+
+    margin-top: 30px;
+}
+
+.contacts__items__list {
+    position: absolute;
+
+    top: 180px;
+    left: 240px;
+}
+
+.contacts__items__list h3 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 140%;
+
+    color: #F9F9F9;
+}
+
+.content__list {
+    list-style: none;
+}
+
+.content__list li h4 {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+
+    color: #F9F9F9;
+}
+
+.privacy__pages {
+    margin: 30px;
+
+    overflow: scroll;
+
+    height: 500px;
+}
+
+.privacy__pages h2 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 140%;
+
+    color: #2A254B;
+}
+
+.privacy__pages p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+
+    color: #2A254B;
+}
+
+.returns__pages {
+    margin: 40px;
+}
+
+.returns__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.returns__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.returns__list li {
+    width: 500px;
+
+}
+
+.returns__list li p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #2A254B;
+}
+
+.returns__img {
+    background-image: url(../images/vozvrattovara.png);
+    background-size: cover;
+    
+    width: 600px;
+    height: 400px;
+
+    background-repeat: no-repeat;
+}
+
+.product__container {
+    display: flex;
+    margin-top: 35px;
+}
+
+.product__img img {
+    width: 700px;
+    height: 700px;
+}
+
+.product__container__content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+    margin-left: 110px;
+}
+
+.product__container__content h2 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    
+    color: #2A254B;
+
+    margin-top: 13px;
+}
+
+.product__container__content span {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    
+    color: #12131A;
+}
+
+.content__discript {
+    margin-top: 54px;
+}
+
+.content__discript h4 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2A254B;
+}
+
+.content__discript p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #505977;
+    
+    margin-top: 15px;
+
+    width: 500px;
+}
+
+.disript__list {
+    margin-top: 20px;
+    margin-left: 17px;
+}
+
+.list__item span {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #505977;
+}
+
+.content__dimensions {
+    margin-top: 30px;
+}
+
+.content__dimensions h4 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2A254B;
+
+    margin-bottom: 20px;
+}
+
+.dimensions__list,
+.dimensions__list2 {
+    list-style: none;
+
+    display: flex;
+}
+
+.dimensions__list li,
+.dimensions__list2 li {
+    width: 100px;
+}
+
+.dimensions__list li {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #2A254B;
+}
+
+.dimensions__list2 li {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #505977;
+
+    margin-top: 10px;
+}
+
+.content__add_product {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.content__add_product h3{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2A254B;
+
+    margin-right: 20px;
+
+}
+
+.content__add_product input {
+    width: 50px;
+    height: 46px;
+
+    display: block;
+	line-height: 32px;
+
+	box-sizing: border-box;
+	text-align: center;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+
+    background: #F9F9F9;
+    border: 0;
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #2A254B;
+}
+
+.content__add_product input[type="number"]::-webkit-outer-spin-button,
+.content__add_product input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+.product__minus,
+.product__plus {
+    width: 50px;
+    height: 46px;
+
+    border: 0;
+
+    cursor: pointer;
+    background: #F9F9F9;
+
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #CAC6DA;
+}
+
+.product__add_cart {
+    margin-left: 170px;
+
+    width: 143px;
+    height: 56px;
+    
+    border: 0;
+    background: #2A254B;
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.listings__title h3{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #2A254B;
+
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 110px;
+}
+
+.register__pages, 
+.login__page {
+    height: 550px;
+}
+
+.register__container,
+.login__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    margin-top: 40px;
+}
+
+.register__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.register__container h2,
+.login__page h2{
+    font-family: 'Clash Display', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #22202E;
+}
+
+.register__content input,
+.login__page input{
+    width: 350px;
+
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #2A254B;
+
+    font-size: 16px;
+}
+
+.register__content button,
+.login__btn button {
+    width: 143px;
+    height: 56px;
+    border: 0;
+    border-radius: 25px;
+    background: #2A254B;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.login__btn button {
+    margin: 10px;
+}
+
+.register__container p,
+.login__page p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: #2A254B;
+
+    padding: 15px;
+}
+
+.after__user {
+    display: none;
+}
+
+.cart__conrainer {
+    margin: 50px 180px;
+}
+
+.cart__conrainer h2{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 140%;
+
+    color: #2A254B;
+
+    margin-bottom: 40px;
+}
+
+.cart__product__title__list ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #EBE8F4;
+}
+
+.cart__product__title__list ul li {
+    margin-bottom: 10px;
+
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #2A254B;
+}
+
+.product__list__item  {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart__list__item img{
+    height: 100px;
+    width: 100px;
+}
+
+.cart__list__item {
+    display: flex;
+    gap: 20px;
+}
+
+.cart__list__item h4 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    
+    color: #2A254B;
+}
+
+.cart__list__item p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+   
+    color: #2A254B;
+}
+
+.cart__list__item span {
+    width: 46px;
+
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #2A254B;
+}
+
+.cart__btn__byu {
+    border-top: 1px solid #EBE8F4;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.cart__btn__byu span {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    
+    color: #2A254B;
+}
+
+.cart__btn__byu button {
+    width: 172px;
+    height: 56px;
+    border: 0;
+    background: #2A254B;
+    
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.plant__container,
+.ceramics__container,
+.tables__container,
+.chairs__container,
+.crockery__container,
+.tableware__container,
+.cutlery__container {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.newarrivals__pages,
+.bestsellers__pages {
+    margin: 50px;
+}
+
+.newarrivals__container,
+.bestsellers__container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 30px;
+    justify-content: center;
+}
+
+.bestsellers__container {
+    flex-wrap: wrap;
+}
+
+.popup__buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: scale(0);
+    position: relative;
+}
+
+.popup__buy.active {
+    transform: scale(1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup__buy h2 {
+    text-align: center;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #2A254B;
+}
+
+.popup__buy__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    padding: 30px;
+
+    position: absolute;
+    top: -500px;
+    
+
+    background: rgb(0.2, 0.2, 0.2, 0.2);
+    border-radius: 20px;
+}
+
+.popup__buy__content input{
+    width: 350px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #2A254B;
+    font-size: 16px;
+}
+
+.popup__buy__close {
+    border-radius: 50%;
+    border: 0;
+    
+    width: 30px;
+    height: 30px;
+
+    background: #2A254B;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+
+    top: -10px;
+    left: 420px;
+}
+
+.popup__buy__btn {
+    width: 172px;
+    height: 56px;
+    border: 0;
+    background: #2A254B;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
