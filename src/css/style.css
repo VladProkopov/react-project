@@ -465,6 +465,13 @@
     align-items: center;
 }
 
+.email__singup__list__item__img {
+    background-image: url(/src/images/property.png);
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
 .email__singup__list__item span {
     font-family: 'Satoshi';
     font-style: normal;

@@ -154,17 +154,17 @@ function Home() {
 
 						<ul className="email__singup__list">
 							<li className="email__singup__list__item">
-								<img src="../images2/property.png" alt="#"></img>
+								<div className="email__singup__list__item__img"></div>
 								<span>Exclusive offers</span>
 							</li>
 
 							<li className="email__singup__list__item">
-								<img src="../images2/property.png" alt="#"></img>
+								<div className="email__singup__list__item__img"></div>
 								<span>Free events</span>
 							</li>
 
 							<li className="email__singup__list__item">
-								<img src="../images2/property.png" alt="#"></img>
+								<div className="email__singup__list__item__img"></div>
 								<span>Large discounts</span>
 							</li>
 						</ul>
